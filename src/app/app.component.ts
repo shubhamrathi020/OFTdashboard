@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'OFTDashboard';
-  
+
   max1 = 300000;
   min1 = 100000;
   max2 = 100000;
@@ -15,18 +15,7 @@ export class AppComponent {
   step = 1;
   value1 = 0;
   value2 = 0;
-  tickInterval = 1;
-  showTicks = false;
-  autoTicks = false;
-
-  getSliderTickInterval(): number | 'auto' {
-    if (this.showTicks) {
-      return this.autoTicks ? 'auto' : this.tickInterval;
-    }
-    return 0;
-  }
-
-
+  
   months: any[] = [
     {value: '3 Months', viewValue: '3 Months'},
     {value: '6 Months', viewValue: '6 Months'},

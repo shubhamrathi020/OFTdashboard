@@ -1,22 +1,22 @@
-<div class="div1">
-  <img src="assets/circle.svg" width="1183" height="1192" id="c1" alt="">
-  <img src="assets/blob-small.svg" width="571" height="571" id="c2" alt="">
-  <img src="assets/accounting_dots.svg" width="430" height="70" id="ad1" alt="">
-  <img src="assets/accounting_dots.svg" width="430" height="70" id="ad2" alt="">
+<div class="containerDiv1">
+  <img src="assets/circle.svg" width="1183" height="1192" id="circle1" alt="">
+  <img src="assets/blob-small.svg" width="571" height="571" id="circle2" alt="">
+  <img src="assets/accounting_dots.svg" width="430" height="70" id="accDots1" alt="">
+  <img src="assets/accounting_dots.svg" width="430" height="70" id="accDots2" alt="">
   <img src="assets/collect_img-video.png" width="652" height="365" id="img1" alt="">
-  <div class="headLineDiv">
+
+  <div class="headTextDiv">
     <p>We make it Super<br>Simple</p>
   </div>
+
   <div class="rect1"></div>
 
   <div class="card ECForm">
     <div class="card-header text-center">Eligibility Calculator</div>
+
     <div class="card-body">
       <label class="formLabel" for="">Monthly Income</label><br>
       <p class="rangeValueText">{{value1 | currency:'INR':'symbol':'1.0-0'}}</p>
-      <!-- <mat-slider class="example-margin" [disabled]="disabled" [invert]="invert" [max]="max" [min]="min" [step]="step"
-        [thumbLabel]="thumbLabel" [tickInterval]="getSliderTickInterval()" [(ngModel)]="value" [vertical]="vertical"
-        aria-labelledby="example-name-label"></mat-slider> -->
       <mat-slider class="full-width mat-slide-toggle" aria-label="unit(s)" [max]="max1" [(ngModel)]="value1"
         [min]="min1" [step]="step"></mat-slider><br>
       <p class="sliderRangeLabel">{{100000 | currency:'INR':'symbol':'1.0-0'}}<span class="float-right">{{300000 |
@@ -36,14 +36,15 @@
         </mat-select>
       </mat-form-field><br>
 
-      <p class="formLabel">Do you have any exsting loans?</p> <span class="float-right t-n36">
+      <p class="formLabel">Do you have any exsting loans? <span class="float-right">
         <mat-slide-toggle></mat-slide-toggle>
-      </span><br>
+      </span></p><br>
 
       <mat-label class="formLabel">EMI of existing loan (optional)</mat-label>
       <mat-form-field class="full-width" [floatLabel]="'never'">
         <input matInput placeholder="₹ 15,000" type="number" value="">
       </mat-form-field>
+
     </div>
   </div>
 
@@ -52,34 +53,37 @@
     <p>{{100000 | currency:'INR':'symbol':'1.0-0'}}</p><br>
     <p>Your EMI will be</p>
     <p>{{15000 | currency:'INR':'symbol':'1.0-0'}}</p><br>
-    <button class="getMoney">GET MONEY</button>
+    <button class="getMoneyButton">GET MONEY</button>
   </div>
 </div>
 
-<div class="div2">
-  <div class="cardDiv1">
+<div class="containerDiv2">
+  <div class="cardsDiv1">
     <div class="card cardTemp">
       <img src="assets/Get Paid Instantly.png" class="cardImgIcon" width="89" height="89" alt="">
       <b>Quick cash disbursement</b>
       <p>Get terms loan that your business needs within 72hrs</p>
     </div>
+
     <div class="card cardTemp">
       <img src="assets/Low interest rate.png" class="cardImgIcon" width="89" height="89" alt="">
       <b>Low-interest rate</b>
       <p>Achieve your financial goals with an amazing interest rate starting at 13% per annum</p>
     </div>
+
     <div class="card cardTemp">
       <img src="assets/Secure Payments.png" class="cardImgIcon" width="89" height="89" alt="">
       <b>Zero Paperwork</b>
       <p>Get started instantly by submitting only your basic details & bank statements</p>
     </div>
   </div>
-  <div class="cardDiv2">
+  <div class="cardsDiv2">
     <div class="card cardTemp">
       <img src="assets/freelancer_feature_icon_6@1.5x.png" class="cardImgIcon" width="89" height="89" alt="">
       <b>Ace your business finances</b>
       <p>Manage banking, accounting and everything in between, on one platform</p>
     </div>
+    
     <div class="card cardTemp">
       <img src="assets/Covid.png" class="cardImgIcon" width="89" height="89" alt="">
       <img src="assets/Path1.svg" id="pathImgIcon1" alt="">
